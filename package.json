@@ -6,12 +6,22 @@
   "scripts": {
     "generate-zod-types": "node index.js"
   },
-  "keywords": ["zod", "json-schema", "typescript","schema","converter","cli"],
+  "keywords": [
+    "zod",
+    "json-schema",
+    "typescript",
+    "schema",
+    "converter",
+    "cli"
+  ],
   "author": "Naitik Kapadia",
   "license": "Apache-2.0",
   "dependencies": {
-    "json-schema-to-zod": "latest",
     "json-refs": "latest",
+    "json-schema-to-zod": "latest",
     "prettier": "latest"
+  },
+  "bin": {
+    "json-schema-to-zod-util": "./cli.js"
   }
 }

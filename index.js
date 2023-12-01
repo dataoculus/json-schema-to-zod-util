@@ -66,7 +66,7 @@ function resolveAndGenerateTypes(inputFilePath, outputFolderPath) {
 function processFolder(inputFolderPath, outputRootFolderPath) {
   fs.readdirSync(inputFolderPath, { withFileTypes: true }).forEach((item) => {
     const itemPath = path.join(inputFolderPath, item.name);
-    if (item.isDirectory()) {
+    if (item.isDirectory() && item.name !== "node_modules") {
       const subfolderOutputPath = path.join(
         outputRootFolderPath,
         path.relative(inputFolderPath, itemPath)
@@ -81,7 +81,7 @@ function processFolder(inputFolderPath, outputRootFolderPath) {
 }
 
 // Specify the root folder paths
-const inputRootFolderPath = __dirname; //
+const inputRootFolderPath = process.cwd(); //
 const outputRootFolderPath = ""; // Output folder
 
 processFolder(inputRootFolderPath, outputRootFolderPath);
