@@ -1,0 +1,17 @@
+{
+  "name": "json-to-zod-util",
+  "version": "1.0.0",
+  "description": "A tool to generate Zod types from JSON schemas with extend refs resolution",
+  "main": "index.js",
+  "scripts": {
+    "generate-zod-types": "node index.js"
+  },
+  "keywords": ["zod", "json-schema", "typescript","schema","converter","cli"],
+  "author": "Naitik Kapadia",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "json-schema-to-zod": "latest",
+    "json-refs": "latest",
+    "prettier": "latest"
+  }
+}
