@@ -12,10 +12,15 @@
     "typescript",
     "schema",
     "converter",
-    "cli"
+    "cli",
+    "batch-converter"
   ],
   "author": "Naitik Kapadia",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dataoculus/json-schema-to-zod-util"
+  },
   "dependencies": {
     "json-refs": "latest",
     "json-schema-to-zod": "latest",
